@@ -1,0 +1,38 @@
+{
+  "name": "react-create-global-state",
+  "version": "1.0.0",
+  "description": "Generate a useState, but for global variables.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel lib.js --out-file index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benhurott/react-create-global-state.git"
+  },
+  "keywords": [
+    "useState",
+    "react",
+    "state",
+    "global",
+    "hooks"
+  ],
+  "author": "Ben-hur Santos Ott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benhurott/react-create-global-state/issues"
+  },
+  "homepage": "https://github.com/benhurott/react-create-global-state#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "husky": "^1.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build && git add ."
+    }
+  }
+}
